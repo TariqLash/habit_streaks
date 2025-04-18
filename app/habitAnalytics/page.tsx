@@ -18,19 +18,30 @@ dates.push(new Date(now));
 
 const formattedDates = dates.map(date => date.toDateString());
 
+const dateNums = [];
+const dateDays = [];
+
 for(let i=0; i<formattedDates.length; i++ ){
   const parts = formattedDates[i].split(' ');
-  console.log(parts[2])
-  console.log(parts[0])
-  console.log()
+  dateNums.push(parts[2])
+  dateDays.push(parts[0])
 }
 
+console.log(dateDays)
+console.log(dateNums)
 
 // console.log(formattedDates);
 
   return (
-    <div className='w-3/4 h-44 bg-neutral-300'>
-      <button></button>
+    <div className='bg-neutral-300'>
+      <div className='bg-red-400 flex justify-around px-16'>
+        {dateNums.map((num, index) => (
+          <div className='flex flex-col bg-blue-100 h-16 w-16 justify-center items-center'>
+            <span className='text-2xl'>{num}</span> 
+            <span className="text-xs">{dateDays[index]}</span>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
