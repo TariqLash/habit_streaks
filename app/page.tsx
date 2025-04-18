@@ -3,6 +3,8 @@ import React from 'react'
 const page = () => {
   return (
     <div>
+      <a href="/habitAnalytics">analytics</a>
+      <br />
       <h1>PLAN:</h1>
       <p>Habits</p>
       <p>- no prn</p>
