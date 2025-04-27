@@ -57,7 +57,7 @@ const habitAnalytics = () => {
         ))}
       </div>
       <AlertDialog>
-        <AlertDialogTrigger>Open</AlertDialogTrigger>
+        <AlertDialogTrigger>Add Task</AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
